@@ -51,3 +51,30 @@
 
 - Ensures the physical communication between the devices and converts an electrical pulse to binary.
 - It defines the specific standard to which the physical components must comply to. The most commonly used protocols include the following, IEEE.802.11, IEEE.802.3 and several others.
+
+## Identifying components associated with layers 1 to 3 of the OSI model
+
+- The first three layers of the OSI Model consist of the Physical, Data-Link and Network layers. The Physical Layer of the OSI Model is responsible for the communication between devices and deals with the physical connection to a network. After a connection has been established by the Physical layer, the Data-Link decapsulates the packets to form frames, which are passed to the Network layer. The frames received from the Data-Link layer are then sent to the Network Layer, which determines where the frames need to be sent to using the headers, which contain the routing information for these frames. The Network layer allows to move traffic to networks not directly attached.
+
+Data link:
+
+- components associated with the `data link layer` is drivers and MAC address. The network software driver facilitates the interaction between the hardware component and the Operating System and forms part of the Data-Link layer of the OSI Model.
+- By executing the command `ipconfig /all` on window shell, the network configuration of the device is displayed. The device’s IP address is displayed, and the physical address is also displayed. A device's physical address is referred to as the MAC address. This is associated with the specific `Network Interface Card (NIC)`. A MAC address is a `unique hexadecimal combination` that is used to identify the NIC. Different hardware vendors have different combinations on how these MAC addresses are compiled.
+- `arp -a` The Address Resolution Protocol (ARP) resolves IP addresses to MAC addresses. To facilitate network communication, an IP address needs to be assigned to the network adapter. The IP address is then allocated to the MAC address, ensuring communication to other network devices. A MAC Address functions on the Data-Link layer of the OSI model.
+
+network layer:
+
+- The network components that are associated with the Network Layer of the OSI Model consists of the following: `IP address, Subnet mask, Default Gateway, Routing information`
+- The Network layer inspects the headers of the packet received from the Data-Link layer to determine if it has reached its final destination. If not, it will forward the packet to the correct destination.
+- From the output of the command `ipconfig /all`, the IP address, Subnet mask and Default Gateway is displayed. These are core components of the Network layer.
+- The route add command `route -p add 'ipaddress' mask 'subnet' 'gateway'` creates a persistent route to the different subnets enabling communication across different subnets through the router.
+- The `ping` command is used to verify that the newly assigned IP address can communicate with another device on a different subnet.
+
+## Identifying Components Belonging to Layers 4 to 7 of the OSI Model
+
+- OSI model layers 4 to 7 comprise the Transport, Session, Presentation and Application layers.
+
+Identify Components of the Transport Layer of the OSI Model:
+
+- Several different protocols operate on the Transport Layer of the OSI Model. These include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+- 
