@@ -7,6 +7,7 @@
 - it is developed by the `international organization of standardization`
 - it consist of `7 layers`, the top 3 layers are `application layer` things like encrytion, decrytion, session establishment happens at this layers and bottom 4 layers are `supporting network functionality`, when we are sending information through this layer from source to destination it shouldn't have to worry about the format or any syntax, some example are data transport addressing, routing, media access, electrical and mechanical characteristics.
 - the data that exists we want to send on network is `not ready` to go on the network, so the upper layer help us to do that and when the data gets ready to transmit through network the lower layer `makes sure` that data gets transmitted from the source address to the destination address
+- The unit of data specified by a protocol at each layer of the OSI seven-layer model is called a `protocol data unit (PDU)`. A frame is the PDU for Layer 2
 
 ## Application layer 7
 
@@ -46,11 +47,14 @@
 - The Data link layer provides communication between directly connected devices. It also provides error handling for the OSI model's physical layer. It consists of two sub-layers, Media Access Control (MAC) and the Logical Link Control (LLC) layers. Most `switches` operate on the Data link layer or Layer 2 for communication, but there are exceptions where switches can also work on Layer 3 and are referred to as a Layer 3 switch where `routing` capabilities are required.
 - this layer is divided into 2 parts: `Logical link control(LLC), media access control(MAC)`
 - [more](https://www.geeksforgeeks.org/data-link-layer/)
+- data link is the only layer that has a sublayers
+- more on this layer in nic.md
 
 ## Physical layer 1
 
 - Ensures the physical communication between the devices and converts an electrical pulse to binary.
 - It defines the specific standard to which the physical components must comply to. The most commonly used protocols include the following, IEEE.802.11, IEEE.802.3 and several others.
+- Anything that moves data from one system to another, such as copper cabling, fiber optics, even radio waves, is part of the OSI Physical layer. Layer 1 doesn’t care what data goes through; it just moves the data from one system to another system
 
 ## Identifying components associated with layers 1 to 3 of the OSI model
 
@@ -77,4 +81,4 @@ network layer:
 Identify Components of the Transport Layer of the OSI Model:
 
 - Several different protocols operate on the Transport Layer of the OSI Model. These include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
-- 
+-
