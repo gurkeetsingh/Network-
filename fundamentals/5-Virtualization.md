@@ -1,5 +1,6 @@
 # Virtualization
 
+- Virtual networks are created by using virtual network software. The virtual network software creates virtual network devices, for example, virtual switches and network interface cards. These virtual network devices are then used to connect other virtual devices together to facilitate communication.
 - creating a logical representation of a component through software. also known as a virtual component
 - a virtual machine is a software based computer
 - example are: virtual machine, virtual network adapters, virtual network devices
